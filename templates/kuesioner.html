@@ -1,0 +1,147 @@
+<!-- 
+/*
+ *	This content is generated from the PSD File Info.
+ *	(Alt+Shift+Ctrl+I).
+ *
+ *	@desc 		
+ *	@file 		mzp_html
+ *	@date 		1612964913247
+ *	@title 		Page 1
+ *	@author 	
+ *	@keywords 	
+ *	@generator 	Export Kit v1.3.figma
+ *
+*/
+ -->
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	 <head>
+		 <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		 <title>mzp_html</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <meta name="description" content="" >
+		 <link rel="StyleSheet" href="/static/kuesioner.css" />
+		 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		 <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+		 <!-- Add your custom HEAD content here -->
+		 <style>
+			 html,body,h1,h2,h3,h4,h5,input {font-family: "Montserrat","Montserrat"}
+			 img{max-width: 100%}
+		 </style>
+	</head>
+	<form action="/data" method = "POST">
+		 <div class="content-container">
+			 <img src="/static/skins/kuesioner.png" class="banner-img" />
+			 <div class="main-container">
+				 <div class="menu-bar">
+					 <h3>Welcome!</h3>
+					 <div class="menu-button-row">
+						 <p>Isi kuesioner awal ini sebagai acuan awal perjalanan bisnis Anda bersama MAJU!</p>
+					 </div>
+				 </div>
+				 <div class="main-content">
+					<div class="vertical-line-container">
+						<div class="vertical-line">
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+							<h4>Dalam bidang apa bisnis Anda bergerak?</h4>
+							{% for j in answers['bus_type'] %}
+								<p><input type='radio' value='{{j}}' name='bus_type'   />{{j}}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+							<h4>Seberapa aktif perusahaan Anda dalam melakukan digital marketing?</h4>
+							{% for j in answers['dm_active'] %}
+								<p><input type='radio' value='{{j}}' name='dm_active'   />{{j}}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+							<h4>Pada range umur berapa target pasar perusahaan Anda?</h4>
+							{% for j in answers['bus_ageTarget'] %}
+								<p><input type='radio' value='{{j}}' name='bus_ageTarget'   />{{j}}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+							<h4>Apa jenis kelamin target pasar perusahaan Anda?</h4>
+							{% for j in answers['bus_genderTarget'] %}
+								<p><input type='radio' value='{{j}}' name='bus_genderTarget'   />{{j}}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+							<h4>Apa tujuan marketing perusahaan Anda saat ini?</h4>
+							{% for j in answers['dm_purpose'] %}
+								<p><input type='radio' value='{{j}}' name='dm_purpose'   />{{j}}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+							<h4>Konten mengenai topik apa saja yang ingin Anda ketahui?</h4>
+							{% for j in answers['content_interest1'] %}
+								<p><input type='radio' value='{{j}}' name='content_interest1'   />{{j}}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+								<h4>Berapa anggaran digital marketing perusahaan Anda per bulan?</h4>
+								<p><input type = "text" name = "dm_budget" /></p>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+								<h4>Berapa rata-rata hasil penjualan per order yang perusahaan Anda dapatkan?</h4>
+								<p><input type = "text" name = "bus_avgsales" /></p>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="list">
+							<div class="dot active"></div>
+						</div>
+						<div class="content">
+								<h4>Berapa target pendapatan/revenue tahunan perusahaan Anda?</h4>
+								<p><input type = "text" name = "bus_revTarget" /></p>
+						</div>
+					</div>
+
+					<div class="button-block">
+						<input type="submit" value="Submit"/>
+					</div>
+			 </div>
+		 </div>
+	</form>
+ </html>

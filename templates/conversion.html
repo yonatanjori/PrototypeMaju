@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Profile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+
+		<link rel="StyleSheet" href="../static/css/conversion.css" />
+		<link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+		<link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+		<link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+		<link href="../static/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+		<link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+		<!-- Add your custom HEAD content here -->
+
+	</head>
+	<body>
+		<div id="content-container" >
+			<div id="_bg__profile_ver2"  ></div>
+
+			<div id="profil_usaha"  >
+
+				<div id="group_62"  >
+					<div id="ellipse_20"  ></div>
+					<img src="../static/skins/ellipse_21.png" id="ellipse_21" />
+
+				</div>
+
+				<div id="nama_usaha"  >
+					<div id="comfycloth" >
+						Comfycloth
+					</div>
+					<div id="usaha_fashion" >
+						Usaha Fashion
+					</div>
+					<div id="rectangle_39"  ></div>
+					<div id="goals__facebook" >
+						<span style="font-size:26px; font-style:normal; font-weight:bolder; text-decoration:NONE; ">Prediksi Conversion Rate</span>
+					</div>
+
+				</div>
+
+				<div id="navbar"  >
+					<div id="rectangle_33"  ></div>
+					<a href="/home">
+						<img src="../static/skins/navbar_ek1.png" id="navbar_ek1" />
+					</a>
+
+				</div>
+				<img src="../static/skins/group_39.png" id="group_39" />
+
+			</div>
+
+			<div id="settings"  >
+				<div id="rectangle_41"  ></div>
+				<div id="group_66"  >
+					<div id="pengaturan" >
+						<a href="/profile" style="color:black;">
+							Kembali
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<form action="/predict"method="post" id="predict">
+					 <div id="goal_1" class="col-md-6 col-sm-6" style="padding-top:10px;">
+						<label style="font-family:Gilmer;" for="Age">Range Usia Target Pasar</label>
+						<select id="inputAge" name="Age" class="form-control">
+								<option style="font-family:Gilmer;" value="3">45-49</option>
+								<option style="font-family:Gilmer;" value="2">40-44</option>
+								<option style="font-family:Gilmer;" value="1">35-39</option>
+								<option style="font-family:Gilmer;" value="0">30-34</option>
+								<option style="font-family:Gilmer;" value="4">25-29</option>
+								<option style="font-family:Gilmer;" selected value="5">20-24</option>
+							  </select>
+					 </div>
+					 <div id="goal_2" class="col-md-6 col-sm-6" style="padding-top:10px;">
+						  <label style="font-family:Gilmer;" for="Gender">Gender Target Pasar</label>
+						  <select id="inputGender" name="Gender" class="form-control">
+								  <option style="font-family:Gilmer;" value="1">Laki-laki</option>
+								  <option style="font-family:Gilmer;" selected value="0">Perempuan</option>
+								</select>
+					 </div>
+					 <div id="goal_3" class="col-md-6 col-sm-6"  style="padding-top:10px;">
+						<label style="font-family:Gilmer;" for="Interest">Interest Target Pasar</label>
+						<select id="inputInterest" name="Interest" class="form-control">
+								<option style="font-family:Gilmer;" value="Sepatu">Sepatu</option>
+								<option style="font-family:Gilmer;" value="Tas">Tas</option>
+								<option style="font-family:Gilmer;" value="Aksesoris">Aksesoris</option>
+								<option style="font-family:Gilmer;" selected value="Pakaian">Pakaian</option>
+							  </select>
+					 </div>
+					 <div id="goal_4" class="col-md-6 col-sm-6" style="padding-top:10px;">
+						<label style="font-family:Gilmer;" for="ROAS">Target Return on Ad Spend (%)</label>
+						<input type="number"step="1" min="50" max="10000" class="form-control" name="ROAS" placeholder="ROAS" required="required" />										  
+					 </div> 
+					 <div style="padding-top:950px;padding-left:400px;">
+					 <button id="button_predict" type="submit" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-lg " style="font-family:Gilmer;font-weight:600;">Predict</button></div>
+			</form>
+		  <br>
+		  <br>		  
+		  <div id="result">
+				   <div class="col-lg-12 " >
+				   <div style="font-size: 120%; color: red; font:'Montserrat'; width: 100%;">
+				   <p style="font-size:20px;color:black"><b>Target Conversion Rate yang harus dicapai:</b> </p>
+				   <samp id="CVR">{{ predicted_CVR }}</samp></div>
+				   </div></div>
+		</div>
+	</body>
+</html>

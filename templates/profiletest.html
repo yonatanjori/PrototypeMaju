@@ -1,0 +1,104 @@
+<!-- 
+/*
+ *	This content is generated from the PSD File Info.
+ *	(Alt+Shift+Ctrl+I).
+ *
+ *	@desc 		
+ *	@file 		mzp_html
+ *	@date 		1612964913247
+ *	@title 		Page 1
+ *	@author 	
+ *	@keywords 	
+ *	@generator 	Export Kit v1.3.figma
+ *
+*/
+ -->
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+     <head>
+         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+         <title>mzp_html</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="" >
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <link rel="StyleSheet" href="/static/profiletest.css" />
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+         <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+         <!-- Add your custom HEAD content here -->
+         <style>
+             html,body,h1,h2,h3,h4,h5 {font-family: "Montserrat","Montserrat"}
+             img{max-width: 100%}
+         </style>
+     </head>
+     <body>
+         <div class="content-container">
+             <img src="/static/skins/profile.png" class="banner-img" />
+             <div class="main-container">
+                 <div class="main-content">
+                    <div class="content-block">
+                        <div class="list">
+                            <img src="/static/skins/profpic.png" class="goal-img"/>
+                        </div>
+                        <div class="content">
+                            <p style="font-size:150%"><b>Comfycloth</b></p>
+                            <p>Usaha Fashion</p>
+                        </div>
+                    </div>
+                    <div class="options-block">
+                        <div class="options-title"><b>Goals</b></div>
+                        <div class="options-choose">
+                            <form style=box-shadow:none;font-size:8px;display:flex;align-items:center class="w3-container w3-card-4" action="/profile">
+                                <select class="w3-select" label="chosen_channel" name="chosen_channel" style="width:fit-content; font-size: 12px;">
+                                    <option selected value="Facebook">Facebook</option>
+                                    <option value="Google Ads">Google Ads</option>
+                                </select>				
+                                <div id="button_pilih"><button class="w3-btn w3-blue w3-padding-medium">Pilih</button></div>
+					        </form>
+                         </div>
+                        
+                        </div>
+                    </div>
+                    <div class=goal-block>
+                        <img src="/static/skins/goals.png" class="chart-img"/>
+                        <a href="{{ url_for('conversion')}}" class="refresh-button">......</a>
+                    </div>  
+                    <div class="button-block">
+                        <a href="{{ url_for('editprofile')}}" class="button">Edit Profil</a>
+                    </div>
+                    <div class="button-block">
+                        <a href="#" class="button">Pengaturan</a>
+                    </div>
+                    <div class="button-block">
+                        <a href="{{ url_for('logout')}}" class="button">Logout</a>
+                    </div>
+                </div>
+                 </div>
+             </div>
+         </div>
+         <div class=navbar-container>
+			<img src="/static/skins/navbar_profile.png" class="navbar-img" />
+			<div class="navbar-menu"> 
+				<a href="{{ url_for('home')}}">
+					<div class="menu-button">
+					</div>
+				</a>
+				<a href="{{ url_for('analytics')}}">
+					<div class="menu-button">
+					</div>
+				</a>
+				<a href="{{ url_for('discover')}}">
+					<div class="menu-button">
+					</div>
+				</a> 
+				<a href="{{ url_for('channels')}}">
+					<div class="menu-button">
+					</div>
+				</a>
+				<a href="{{ url_for('profile')}}">
+					<div class="menu-button">
+					</div>
+				</a>
+			</div>
+		</div>
+     </body>
+ </html>
