@@ -1,0 +1,164 @@
+/*
+	@name mzp_html
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { display: block; margin: 0px; border: none; padding: 0px; }
+
+h3 { margin: 0 }
+
+p { margin: 0; font-size: 14px;}
+
+a { color: #000; text-decoration: none}
+
+.content-container { 
+	display: block; 
+	position: relative; 
+	overflow: auto;
+	width: 400px; 
+	height: 700px; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 0x;
+	border: 2px solid #eee;
+	border-radius: 10px;
+  }
+
+.banner-img {
+	width: inherit;
+	border-radius: 10px;
+}
+
+.main-container {
+	margin: 24px;
+}
+
+.menu-bar {
+	margin: 8px 0 30px;
+}
+
+.menu-button-row {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-button-row a {
+  	text-align: center;
+	font-weight: normal;
+	background-color: rgb(230, 230, 230);
+	border-radius: 20px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.2s;
+}
+
+.menu-button-row a:hover {
+	background-color: #ffc800;
+	transition: 0.2s;
+}
+
+.menu-button {
+	padding: 8px;
+	width: 50px;
+	height:50px;
+	border-radius: 50px;
+	vertical-align: middle;
+}
+
+.menu-title-row {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-title-row a {
+  	text-align: center;
+	font-weight: normal;
+	background-color: transparent;
+	border-radius: 4px;
+}
+.menu-title {
+	padding: 8px;
+	width: 50px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.button-img {
+	width: inherit;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+.content-block {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.2s;
+}
+
+.content-block:hover {
+	background-color: #ffc800;
+	transition: 0.2s;
+}
+
+.list {
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+.content-img {
+	width: inherit;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 10px;
+	
+}
+.navbar-container {
+	width: 410px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: #eee;
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 0px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.navbar-menu{
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+.navbar-img {
+	width: 100%;
+	border-radius: 10px;
+	margin-top: 0px;
+	margin-left: auto; 
+	margin-right: auto;
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+
+
+
+/* Add your custom CSS here */

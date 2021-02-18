@@ -1,0 +1,801 @@
+/*
+	@name mzp_html
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { display: block; margin: 0px; border: none; padding: 0px; }
+
+h3 { margin: 0 }
+
+p { margin: 0; font-size: 14px;}
+
+a { color: #000; text-decoration: none}
+
+.content-container { 
+	display: block; 
+	position: relative; 
+	overflow: auto;
+	width: 400px; 
+	height: 700px; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 2px solid #000;
+	border-radius: 10px;
+  }
+
+.banner-img {
+	width: inherit;
+	border-radius: 10px;
+}
+
+.back{
+	margin: 5% 5% 0;
+	width: 10%
+}
+
+.main-container {
+	margin: 24px;
+}
+
+.menu-bar {
+	margin: 8px 0 48px;
+}
+
+.menu-button-row {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-button-row a {
+  	text-align: center;
+	font-weight: normal;
+	background-color: #bbb;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.2s;
+}
+
+.menu-button-row a:hover {
+	background-color: #ffc800;
+	transition: 0.2s;
+}
+
+.menu-button {
+	padding: 8px;
+	width: 65px;
+}
+
+.content-block {
+	display: flex;
+	align-items: center;
+	padding: 18px 0;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
+.content-block:hover {
+	background-color: #ffc800;
+	transition: 0.2s;
+}
+
+.list {
+	height: 100%;
+}
+
+.content {
+	padding-left: 16px;
+}
+
+.dot {
+	height: 30px;
+	width: 30px;
+	background-color: #bbb;
+	border-radius: 50%;
+}
+
+.completed {
+	background-color: #d15276;
+}
+
+.active {
+	background-color: #00c19a;
+	box-shadow: 0px 0px 0px 10px rgba(181, 235, 224, 0.7);
+}
+
+.vertical-line-container {
+	height: 100%;
+	width: 1px;
+	position: absolute;
+	z-index: -1;
+}
+
+.vertical-line {
+	height: 100%;
+	margin: 30px 0 0 14px;
+	border-left: 1px dashed #000;
+}
+
+
+#_bg__discovery_tips {
+	top: 0px;
+	left: 0px;
+	width: 900px;
+	background:rgba(255,255,255,1);
+}
+
+#iphone_x___silver {
+	top: 16px;
+	left: 48px;
+	width: 804.96px;
+	height: 1642.57px;
+	opacity: 1;
+}
+
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 804.96px;
+	height: 1642.57px;
+	background:rgba(255,255,255,1);
+}
+
+#group_33 {
+	top: 25px;
+	left: 37px;
+	width: 744.77px;
+	height: 1197.46px;
+}
+
+#group_39 {
+	top: 0px;
+	left: 0px;
+	width: 732.17px;
+	height: 222.61px;
+}
+
+
+#pilih_menu {
+	top: 264px;
+	left: 59px;
+	width: 186px;
+	height: 64.527043457031px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.81px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.81px;
+	color:#000000;
+}
+
+#group_55 {
+	top: 331px;
+	left: 60px;
+	width: 143.68px;
+	height: 46.96px;
+}
+
+#rectangle_52 {
+	top: 0px;
+	left: 0px;
+	width: 143.68px;
+	height: 46.96px;
+	-ms-border-radius: 9.63px;
+	-o-border-radius: 9.63px;
+	-moz-border-radius: 9.63px;
+	-webkit-border-radius: 9.63px;
+	border-radius: 9.63px;
+	-ms-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	background:rgba(255,208.17,42.15,1);
+}
+
+
+#tips {
+	top: 11px;
+	left: 41px;
+	width: 67px;
+	height: 38.634672088623px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20.43px;
+	text-align: center;
+	line-height: 20.43px;
+	color:#000000;
+}
+
+#group_56 {
+	top: 331px;
+	left: 217px;
+	width: 143.68px;
+	height: 46.96px;
+}
+
+#rectangle_52_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 143.68px;
+	height: 46.96px;
+	-ms-border-radius: 9.63px;
+	-o-border-radius: 9.63px;
+	-moz-border-radius: 9.63px;
+	-webkit-border-radius: 9.63px;
+	border-radius: 9.63px;
+	-ms-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	background:rgba(196,196,196,1);
+}
+
+
+#influencer {
+	top: 11px;
+	left: 6px;
+	width: 136.41467208862px;
+	height: 38.634672088623px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 20.43px;
+	text-align: center;
+	line-height: 20.43px;
+	color:#000000;
+}
+
+#group_57 {
+	top: 331px;
+	left: 374px;
+	width: 143.68px;
+	height: 46.96px;
+}
+
+#rectangle_52_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 143.68px;
+	height: 46.96px;
+	-ms-border-radius: 9.63px;
+	-o-border-radius: 9.63px;
+	-moz-border-radius: 9.63px;
+	-webkit-border-radius: 9.63px;
+	border-radius: 9.63px;
+	-ms-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	background:rgba(196,196,196,1);
+}
+
+
+#konten {
+	top: 11px;
+	left: 25px;
+	width: 98.184672088623px;
+	height: 38.634672088623px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 20.43px;
+	text-align: center;
+	line-height: 20.43px;
+	color:#000000;
+}
+
+#group_58 {
+	top: 331px;
+	left: 531px;
+	width: 143.68px;
+	height: 46.96px;
+}
+
+#rectangle_52_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 143.68px;
+	height: 46.96px;
+	-ms-border-radius: 9.63px;
+	-o-border-radius: 9.63px;
+	-moz-border-radius: 9.63px;
+	-webkit-border-radius: 9.63px;
+	border-radius: 9.63px;
+	-ms-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	box-shadow:2.35px 2.35px 1px 1px rgba(0,0,0,0.25);
+	background:rgba(196,196,196,1);
+}
+
+
+#desain {
+	top: 11px;
+	left: 31px;
+	width: 86.024672088623px;
+	height: 38.634672088623px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 20.43px;
+	text-align: center;
+	line-height: 20.43px;
+	color:#000000;
+}
+
+#line {
+	top: 501px;
+	left: 35px;
+	width: 75.14px;
+	height: 660.72px;
+}
+
+#ellipse_6 {
+	opacity:0.60000002384186;
+	top: 0px;
+	left: 14px;
+	width: 47.67px;
+	height: 47.67px;
+	-ms-border-radius: 23.83px / 23.83px;
+	-o-border-radius: 23.83px / 23.83px;
+	-moz-border-radius: 23.83px / 23.83px;
+	-webkit-border-radius: 23.83px / 23.83px;
+	border-radius: 23.83px / 23.83px;
+	background:rgba(197,66,95,0.6);
+}
+
+
+#ellipse_7 {
+	top: 120px;
+	left: 14px;
+	width: 47.67px;
+	height: 47.67px;
+	-ms-border-radius: 23.83px / 23.83px;
+	-o-border-radius: 23.83px / 23.83px;
+	-moz-border-radius: 23.83px / 23.83px;
+	-webkit-border-radius: 23.83px / 23.83px;
+	border-radius: 23.83px / 23.83px;
+	background:rgba(66,197,168,1);
+}
+
+
+#ellipse_10 {
+	opacity:0;
+	top: 111px;
+	left: 6px;
+	width: 65.74px;
+	height: 65.74px;
+	-ms-border-radius: 31.7px / 31.7px;
+	-o-border-radius: 31.7px / 31.7px;
+	-moz-border-radius: 31.7px / 31.7px;
+	-webkit-border-radius: 31.7px / 31.7px;
+	border-radius: 31.7px / 31.7px;
+	border: 1.17px solid #42c5a8;
+	background:rgba(66,197,168,0);
+}
+
+
+#ellipse_11 {
+	opacity:0;
+	top: 105px;
+	left: 0px;
+	width: 77.48px;
+	height: 77.48px;
+	-ms-border-radius: 37.57px / 37.57px;
+	-o-border-radius: 37.57px / 37.57px;
+	-moz-border-radius: 37.57px / 37.57px;
+	-webkit-border-radius: 37.57px / 37.57px;
+	border-radius: 37.57px / 37.57px;
+	border: 1.17px solid #42c5a8;
+	background:rgba(66,197,168,0);
+}
+
+
+#ellipse_8 {
+	opacity:0.60000002384186;
+	top: 239px;
+	left: 14px;
+	width: 47.67px;
+	height: 47.67px;
+	-ms-border-radius: 23.83px / 23.83px;
+	-o-border-radius: 23.83px / 23.83px;
+	-moz-border-radius: 23.83px / 23.83px;
+	-webkit-border-radius: 23.83px / 23.83px;
+	border-radius: 23.83px / 23.83px;
+	background:rgba(178.5,178.5,178.5,0.6);
+}
+
+
+#ellipse_9 {
+	opacity:0.60000002384186;
+	top: 359px;
+	left: 14px;
+	width: 47.67px;
+	height: 47.67px;
+	-ms-border-radius: 23.83px / 23.83px;
+	-o-border-radius: 23.83px / 23.83px;
+	-moz-border-radius: 23.83px / 23.83px;
+	-webkit-border-radius: 23.83px / 23.83px;
+	border-radius: 23.83px / 23.83px;
+	background:rgba(178,178,178,0.6);
+}
+
+
+#ellipse_12 {
+	opacity:0.60000002384186;
+	top: 493px;
+	left: 13px;
+	width: 47.67px;
+	height: 47.67px;
+	-ms-border-radius: 23.83px / 23.83px;
+	-o-border-radius: 23.83px / 23.83px;
+	-moz-border-radius: 23.83px / 23.83px;
+	-webkit-border-radius: 23.83px / 23.83px;
+	border-radius: 23.83px / 23.83px;
+	background:rgba(178,178,178,0.6);
+}
+
+
+#ellipse_13 {
+	opacity:0.60000002384186;
+	top: 613px;
+	left: 13px;
+	width: 47.67px;
+	height: 47.67px;
+	-ms-border-radius: 23.83px / 23.83px;
+	-o-border-radius: 23.83px / 23.83px;
+	-moz-border-radius: 23.83px / 23.83px;
+	-webkit-border-radius: 23.83px / 23.83px;
+	border-radius: 23.83px / 23.83px;
+	background:rgba(178,178,178,0.6);
+}
+
+
+#line_7 {
+	top: 143px;
+	left: 6px;
+	width: 63.64px;
+	height: 0px;
+}
+
+
+#line_8 {
+	top: 271px;
+	left: 6px;
+	width: 63.64px;
+	height: 0px;
+}
+
+
+#line_9 {
+	top: 396px;
+	left: 0px;
+	width: 74.91px;
+	height: 0px;
+}
+
+#group_21_21 {
+	top: 465px;
+	left: 116px;
+	width: 629px;
+	height: 732.05px;
+}
+/* #group_15 {
+	top: 0px;
+	left: 8px;
+	width: 547.81px;
+	height: 114.24px;
+}
+
+#buat_konten_secara_rutin_2x_seminggu {
+	top: 44px;
+	left: 0px;
+	width: 520px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#3B3B3B;
+}
+
+
+#tingkatkan_impression_instagram {
+	top: 0px;
+	left: 0px;
+	width: 565px;
+	height: 64.02963470459px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.58px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.58px;
+	color:#000000;
+}
+
+
+#instagram {
+	top: 81px;
+	left: 0px;
+	width: 149px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#8C8C8C;
+}
+
+#group_16 {
+	top: 122px;
+	left: 8px;
+	width: 522.88px;
+	height: 114.24px;
+}
+
+#iklan_dengan_target_ibu_rumah_tangga {
+	top: 44px;
+	left: 0px;
+	width: 537px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#3B3B3B;
+}
+
+
+#pasang_iklan_facebook {
+	top: 0px;
+	left: 0px;
+	width: 398px;
+	height: 64.02963470459px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.58px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.58px;
+	color:#000000;
+}
+
+
+#facebook {
+	top: 81px;
+	left: 0px;
+	width: 146.27179222107px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#8C8C8C;
+}
+
+#group_19 {
+	top: 244px;
+	left: 8px;
+	width: 439.34px;
+	height: 114.24px;
+}
+
+#adakan_shopee_live_secara_rutin {
+	top: 44px;
+	left: 0px;
+	width: 453.31179222107px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Raleway;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#3B3B3B;
+}
+
+
+#shopee_live_toy_story {
+	top: 0px;
+	left: 0px;
+	width: 379.14963470459px;
+	height: 64.02963470459px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.58px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.58px;
+	color:#000000;
+}
+
+
+#shopee {
+	top: 81px;
+	left: 0px;
+	width: 117.29179222107px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#8C8C8C;
+}
+
+#group_20 {
+	top: 372px;
+	left: 8px;
+	width: 498.6px;
+	height: 114.36px;
+}
+
+#tanya_kepuasan_pelanggan_via_email {
+	top: 44px;
+	left: 0px;
+	width: 513px;
+	height: 53.431792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#3B3B3B;
+}
+
+
+#tanya_kepuasan_pelanggan {
+	top: 0px;
+	left: 0px;
+	width: 473.40963470459px;
+	height: 64.02963470459px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.58px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.58px;
+	color:#000000;
+}
+
+
+#email {
+	top: 81px;
+	left: 0px;
+	width: 87.001792221069px;
+	height: 53.551792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#8C8C8C;
+} */
+/* 
+#group_21_ek1 {
+	top: 495px;
+	left: 8px;
+	width: 531px;
+	height: 114.78px;
+} */
+/* 
+#iklan_dengan_target_ibu_rumah_tangga_ek1 {
+	top: 44px;
+	left: 0px;
+	width: 545px;
+	height: 53.971792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#3B3B3B;
+}
+
+
+#pasang_iklan_di_instagram {
+	top: 0px;
+	left: 0px;
+	width: 473.40963470459px;
+	height: 64.02963470459px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.58px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.58px;
+	color:#000000;
+}
+
+
+#instagram_ek1 {
+	top: 81px;
+	left: 0px;
+	width: 149px;
+	height: 53.971792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#8C8C8C;
+}
+
+#group_22 {
+	top: 617px;
+	left: 0px;
+	width: 629px;
+	height: 114.78px;
+}
+
+#adakan_giveaway_produk_bagi_pelanggan_setia {
+	top: 44px;
+	left: 0px;
+	width: 643px;
+	height: 53.971792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#3B3B3B;
+}
+
+
+#apresiasi_pelanggan_loyal {
+	top: 0px;
+	left: 0px;
+	width: 473.40963470459px;
+	height: 64.02963470459px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 33.58px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 33.58px;
+	color:#000000;
+}
+
+
+#instagram_ek2 {
+	top: 81px;
+	left: 0px;
+	width: 149px;
+	height: 53.971792221069px;
+	overflow: hidden;
+	font-family: Gilmer;
+	font-size: 27.94px;
+	text-align: left;
+	line-height: 27.94px;
+	color:#8C8C8C;
+} */
+
+
+#line_9_ek1 {
+	top: 1071.36px;
+	left: 97.55px;
+	width: 74.91px;
+	height: 0px;
+}
+
+
+#line_10 {
+	top: 1200.36px;
+	left: 97.55px;
+	width: 74.91px;
+	height: 0px;
+}
+
+
+
+/* Add your custom CSS here */

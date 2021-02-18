@@ -1,0 +1,252 @@
+/*
+	@name mzp_html
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { display: block; margin: 0px; border: none; padding: 0px; }
+
+h3 { margin: 0 }
+
+p { margin: 0; font-size: 14px;}
+
+a { color: #000; text-decoration: none}
+
+.content-container { 
+	display: block; 
+	position: relative; 
+	overflow: auto;
+	width: 400px; 
+	height: 700px; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 0x;
+	border: 2px solid #eee;
+	border-radius: 10px;
+  }
+
+.banner-img {
+	width: inherit;
+	border-radius: 10px;
+}
+
+.main-container {
+	margin: 24px;
+}
+
+.menu-bar {
+	margin: 8px 0 30px;
+}
+
+.menu-button-row {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-button-row a {
+  	text-align: center;
+	font-weight: normal;
+	background-color: rgb(230, 230, 230);
+	border-radius: 20px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.2s;
+}
+
+.menu-button-row a:hover {
+	background-color: #ffc800;
+	transition: 0.2s;
+}
+
+.menu-button {
+	padding: 8px;
+	width: 50px;
+	height:50px;
+	border-radius: 50px;
+	vertical-align: middle;
+}
+
+.menu-title-row {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-title-row a {
+  	text-align: center;
+	font-weight: normal;
+	background-color: transparent;
+	border-radius: 4px;
+}
+.menu-title {
+	padding: 8px;
+	width: 50px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.button-img {
+	width: inherit;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+.content-block {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-radius: 10px;
+}
+
+.list {
+	width:30%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+.content-img {
+	width: inherit;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+.navbar-container {
+	width: 410px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: #eee;
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 0px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.navbar-menu{
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+.navbar-img {
+	width: 90%;
+	border-radius: 10px;
+	margin-left: auto; 
+	margin-right: auto;
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+.button {
+    border: none;
+	width: 78%;
+    padding: 12px 24px;
+    font-size: 13px;
+	font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+	border-radius: 10px;
+	background: #00c19a; 
+	color:black;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button:hover {background: #ffc800; color: black;}
+
+.button-block {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-radius: 4px;
+}
+
+.options-block {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	padding: 10px 0;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.options-title {
+	width:30%;
+	height: 100%;
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.options-choose {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	grid-area: 1 / 2 / 2 / 3;
+	box-shadow: transparent;
+}
+
+.goal-block {
+	display: grid;
+	grid-template-columns: repeat(22, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	align-items: center;
+	padding: 10px 0;
+	border-radius: 10px;
+}
+
+.chart-img {
+	width: 90%;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 10px;
+	grid-area: 1 / 1 / 9 / 23; 
+}
+
+
+.refresh-button{
+	grid-area: 1 / 10 / 2 / 11;
+	height:inherit;
+	width: 100%;
+	border: none;
+    padding: 10px 10px;
+    font-size: 13px;
+	font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+	border-radius: 10px;
+	background: transparent; 
+	color:transparent;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+}
+
+.goal-img {
+	width: 100%;
+	margin-left: auto; 
+	margin-right: auto;
+	border-radius: 200px;
+}
+
+/* Add your custom CSS here */
