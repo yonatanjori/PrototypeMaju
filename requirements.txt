@@ -36,7 +36,6 @@ numpy==1.15.2
 oauthlib==3.0.1
 packaging==20.7
 pandas==0.23.4
-pickle
 pluggy==0.13.1
 protobuf==3.14.0
 py==1.9.0
